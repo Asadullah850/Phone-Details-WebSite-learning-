@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <title>Phone Hunter</title>
+</head>
+<body class="w-[95%] mx-auto">
+    <header>
+        <div class="navbar bg-base-100 drop-shadow-lg my-5">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">Phone Details</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div  class="form-control">
+                <input id="searchInput" type="text" placeholder="Search your Phone" class="input input-bordered" />
+              </div>
+              <div class=" dropdown-end">
+                <button id="searchButt"  class="btn btn-secondary">Button</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <!-- end header -->
+    <main>
+
+<!-- Put this part before body -->
+<input type="checkbox" id="modal" class="modal-toggle" />
+<div class="modal">
+  <div id="modataContain" class="modal-box relative">
+  </div>
+</div>
+        <div id="phoneContainer" class="grid grid-cols-3 gap-4">
+            <!-- card -->
+            <!-- card -->
+          
+        </div>
+        <div id="noElement" class="text-2xl text-center hidden ">Unknown Search Result</div>
+        <div id="showAllPhoneDiv" class=" hidden text-center my-5">
+          <button id="show-all-Butt"class="btn btn-secondary">Show All</button>
+        </div>
+        <progress id="progress" class="hidden progress w-96 mx-[30%] "></progress>
+
+    </main>
+
+<!-- <script></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jsFile/main.js"></script>
+</body>
+</html>
